@@ -1,0 +1,38 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Doge Hub", HidePremium = false, SaveConfig = true, IntroEnabled = false})
+
+OrionLib:MakeNotification({
+	Name = "Notification",
+	Content = "Welcome to Doge Hub!",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+local Tab = Window:MakeTab({
+	Name = "Autofarms",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddParagraph("Instructions","For one instance click autofarm 1, for the second instance click autofarm 2.")
+
+TabName:AddToggle({
+Name = "Autofarm 1",
+Default = false,
+Callback = function(x)
+if x == true then
+
+while true do
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(72.9500732421875, -310.907470703125, -104.05709075927734)
+wait (1)
+end
+
+elseif x == false then
+
+print(h)
+
+end
+end
+})
+
+

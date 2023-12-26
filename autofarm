@@ -1,0 +1,49 @@
+game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "Welcome!";
+                Text = "Enjoy using Doge Hub";
+                Duration = 1.5;})
+
+
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/GdN5iRbt"))() 
+local Window = Library.CreateLib("Doge Hub", "DarkTheme") 
+
+
+local Tab1 = Window:NewTab("Autofarm")
+local Tab1Section = Tab1:NewSection("Scripts")
+
+
+Tab1Section:NewButton("Farm 1 - Left", "Load.", function()
+game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "Notification";
+                Text = "Success.";
+                Duration = 0.1;})
+
+while true do
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(72.9500732421875, -310.907470703125, -104.05709075927734)
+wait (1)
+end
+
+end)
+
+Tab1Section:NewButton("Farm 2 - Right", "Load.", function()
+game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "Notification";
+                Text = "Success.";
+                Duration = 0.1;})
+
+while true do
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(79.58275604248047, -310.907470703125, -103.96561431884766)
+wait (1)
+end
+
+end)
+
+Tab1Section:NewButton("Auto Kill", "Load.", function()
+game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "Notification";
+                Text = "Success.";
+                Duration = 0.1;})
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Deni210/murdersvssherrifsduels/main/rubyhub", true))()
+
+end)

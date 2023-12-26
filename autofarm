@@ -47,3 +47,13 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Deni210/murdersvssherrifsduels/main/rubyhub", true))()
 
 end)
+
+Tab1Section:NewButton("Anti AFK", "Load.", function()
+game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "Notification";
+                Text = "Success.";
+                Duration = 0.1;})
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dogefriendyt/dump/main/antiafk", true))()
+
+end)

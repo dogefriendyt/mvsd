@@ -11,30 +11,30 @@ local Window = Library.CreateLib("Doge Hub", "DarkTheme")
 local Tab1 = Window:NewTab("Autofarm")
 local Tab2 = Window:NewTab("Other")
 local Tab1Section = Tab1:NewSection("Scripts")
-local Tab2Section = Tab2:NewSection("Scripts")
+local Tab2Section = Tab2:NewSection("Other Scripts")
 
 
-Tab1Section:NewButton("Farm 1 - 1v1 Left side.", "Load.", function()
+Tab1Section:NewButton("Farm 1,2,3,4 - 4v4 Left side", "Load.", function()
 game:GetService("StarterGui"):SetCore("SendNotification",{
                 Title = "Notification";
                 Text = "Success.";
                 Duration = 0.1;})
 
 while true do
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(72.9500732421875, -310.907470703125, -104.05709075927734)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(20.273670196533203, -310.907470703125, -57.97673797607422)
 wait (1)
 end
 
 end)
 
-Tab1Section:NewButton("Farm 2 - 1v1 Right side.", "Load.", function()
+Tab1Section:NewButton("Farm 5,6,7,8 - 4v4 Right side.", "Load.", function()
 game:GetService("StarterGui"):SetCore("SendNotification",{
                 Title = "Notification";
                 Text = "Success.";
                 Duration = 0.1;})
 
 while true do
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(79.58275604248047, -310.907470703125, -103.96561431884766)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(8.685198783874512, -310.907470703125, -57.24217987060547)
 wait (1)
 end
 
